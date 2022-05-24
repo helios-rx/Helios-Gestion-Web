@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-  <script src="tablas.js">
+  <script src="java.js">
   </script>
     <!-- Inicio del Header  -->
     <header>
@@ -17,7 +17,7 @@
             <img src="img/Helios.bmp" class="img-fluid img-thumbnail" alt="Imagen del logo de la empresa">
         </div>
         <div class="text-center mb-5">
-            <h1 class="primary">Helio Servicio Tecnico</h1>
+            <h1 class="primary">Helios Servicio Tecnico</h1>
         </div>
     </header>
     <!-- Nav de futuro menu o fotos -->
@@ -44,27 +44,27 @@
             <form class="row m-3 p-5 informe" id="tblData">
                 <div class="col-md-6">
                   <label for="inputEmail4" class="form-label">Nombre del Cliente</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <input type="email" class="form-control" id="nm_cliente">
                 </div>
                 <div class="col-md-6">
                   <label for="inputPassword4" class="form-label">Tipo de equipo</label>
-                  <input type="text" class="form-control" id="inputPassword4">
+                  <input type="text" class="form-control" id="tip_equipo">
                 </div>
                 <div class="col-12">
                   <label for="inputAddress" class="form-label">Marca del equipo</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="">
+                  <input type="text" class="form-control" id="mrc_equipo" placeholder="">
                 </div>
                 <div class="col-12">
                   <label for="inputAddress2" class="form-label">Localidad</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                  <input type="text" class="form-control" id="local" placeholder="">
                 </div>
                 <div class="col-md-6">
                   <label for="inputCity" class="form-label">Direccion</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <input type="text" class="form-control" id="dire">
                 </div>
                 <div class="col-md-6">
                   <label for="inputState" class="form-label">Estado</label placeholder="Estado">
-                  <select id="inputState" class="form-select" placeholder="Estado">
+                  <select id="estad" class="form-select" placeholder="Estado">
                     <option>Emergencia</option>
                     <option>Urgente</option>
                     <option>Sin Urgencia</option>
@@ -73,13 +73,12 @@
                 </div>             
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Breve Descripcion del Trabajo</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="descp_trabajo" rows="3"></textarea>
                   </div>
                 <div class="text-center">
                     <button type="button" onclick= "alert('Se Cargo el Servicio Nuevo');" class="btn btn-primary" id="click">Ingresar</button>
                     <button type="button" onclick="" class="btn btn-secondary">
-                     <link rel="stylesheet" href="index.html">
-                        Volver...
+                        Descargar Excel
                     </button>
                 </div>
               </form>            
