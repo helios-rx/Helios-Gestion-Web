@@ -9,8 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-  <script src="java.js">
+  <script type="module" src="java.js">
   </script>
+
     <!-- Inicio del Header  -->
     <header>
         <div class="text-center m-3 img-logo">
@@ -76,10 +77,13 @@
                     <textarea class="form-control" id="descp_trabajo" rows="3"></textarea>
                   </div>
                 <div class="text-center">
-                    <button type="button" onclick= "alert('Se Cargo el Servicio Nuevo');" class="btn btn-primary" id="click">Ingresar</button>
+                    <button type="button" onclick= "getValueInput(); alert('Se Cargo el Servicio Nuevo');" class="btn btn-primary" id="click">Ingresar</button>
                     <button type="button" onclick="" class="btn btn-secondary">
                         Descargar Excel
                     </button>
+                </div>
+                <div>
+                  <label for="" class="form-label" id="mostrar"></label>
                 </div>
               </form>            
 

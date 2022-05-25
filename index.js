@@ -14,7 +14,7 @@ const servicio = new Servicio({
 console.log(servicio)
 
 // saving the created document
-//product.save((err, document) => {
-  //  if (err) console.log(err);
-   // console.log('saved:', document);
-//});
+servicio.save((err, document) => {
+  if (err) console.log(err);
+    console.log('saved:', document);
+});

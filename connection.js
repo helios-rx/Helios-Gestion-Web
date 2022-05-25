@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 // localhost:27017
-const uri = "mongodb://127.0.0.1:27017/servicios";
+const uri = "mongodb+srv://ezequiel:eraeze29@cluster0.xoepino.mongodb.net/servicios?";
 mongoose
 .connect(uri)
   .catch(err => console.log(err));
